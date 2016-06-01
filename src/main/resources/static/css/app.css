@@ -1,0 +1,44 @@
+/* app css stylesheet */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	height: 99%;
+	margin-top: -20px;
+}
+.footer, .push {
+	max-width: 722px;
+
+	margin: 0px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.jumbotron {
+	background-image: url(../img/jumbo.jpg);
+	background-position: right -250px top -40px;
+	text-align: center;
+	text-shadow: 0px 0px 50px rgba(0,0,0,.4), 10px 10px 30px rgba(0,0,0,.075);
+	color: white !important;
+	margin-top: 40px;
+}
+
+.jumboLogo{
+	text-align: center;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -45px;
+
+  max-width: 750px; /* or 950px */
+
+  	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}

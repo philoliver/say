@@ -1,0 +1,31 @@
+<h3>&nbsp;</h3>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="header">
+			<p class="jumboLogo">
+				<img src="img/say-logo.png" class="img-responsive" alt="Say"
+					style="display: inline; margin-left: 10px">
+			</p>
+			<hr />
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6">
+		<h3>Hello There!</h3>
+		<p>Please enter the passphrase to continue:</p>
+		<br/>
+	</div>
+</div>
+<div class="row">
+	<form>
+		<div class="form-group" ng-class="{'has-error': passphraseWrong}">
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="inputPassphrase" ng-model="passphrase">
+			</div>
+			<div class="col-sm-2">
+				<input type="submit" type="button" class="btn btn-primary" ng-click="checkPassphrase()" value="Enter"/>
+			</div>
+		</div>
+	</form>
+</div>

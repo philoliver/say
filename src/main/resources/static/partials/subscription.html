@@ -1,0 +1,32 @@
+<h3>&nbsp;</h3>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="header">
+				<p class="jumboLogo">
+					<img src="img/say-logo.png" class="img-responsive" alt="Say"
+						style="display: inline; margin-left: 10px">
+				</p>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<h3>Subscription</h3>
+	<p>Do you want to be informed about new posts? Just subscribe here:</p>
+	<br/>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-sm-9">
+				<input type="text" class="form-control" placeholder="Enter email" ng-model="email">
+			</div>
+
+			<div class="col-sm-3">
+				<button type="button" class="btn btn-primary form-control" ng-click="subscribe()">Subscribe</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<br/>
+				<div class="alert alert-success" ng-class="{hidden: hideSuccess}" role="alert"><strong>Thanks! We subscribed: </strong>{{successEmail}}</div>
+			</div>
+		</div>
+	</div>

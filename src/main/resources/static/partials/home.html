@@ -1,0 +1,35 @@
+<h3>&nbsp;</h3>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="header">
+				<p class="jumboLogo">
+					<img src="img/say-logo.png" class="img-responsive" alt="Say"
+						style="display: inline; margin-left: 10px">
+				</p>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<form>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<input type="text" class="form-control input-lg"  placeholder="Whats on your mind?" ng-model="newPost">
+				</div>
+				<div class="col-sm-2">
+					<input type="submit" type="button" class="btn btn-primary form-control input-lg" ng-click="post()" value="Say it"/>
+					&nbsp;
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+<!-- 			<h3>Said so far..</h3> -->
+			<table class="table table-hover table-striped">
+				<tr ng-repeat="post in posts" ng-class="{success:post.isNew}">
+					<td><h5>{{post.message}}</h5></td>
+				</tr>
+			</table>
+		</div>
+	</div>
